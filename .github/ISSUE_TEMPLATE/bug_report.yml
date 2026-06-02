@@ -1,0 +1,36 @@
+name: Bug report
+description: Create a report to help us improve the agent-kit
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us what you expected to happen
+      placeholder: Tell us what you did and what went wrong
+    validations:
+      required: true
+  - type: input
+    id: persona
+    attributes:
+      label: Which Persona was active?
+      description: e.g., Maestro, Architect, Coder
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Agent Logs/Output
+      description: Please paste the relevant output from the AI agent here.
+      render: shell
+  - type: input
+    id: model
+    attributes:
+      label: Model Used
+      description: e.g., Gemini 2.0 Flash, Claude 3.5 Sonnet
+    validations:
+      required: true

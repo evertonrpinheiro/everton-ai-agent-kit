@@ -22,6 +22,25 @@ The framework operates on a **Maestro-Persona** architecture. It doesn't just "c
 | **Skills** | Reusable, tool-specific procedures (e.g., `github-portfolio`, `code-sec-review`, `task-tracking`). |
 | **Rules** | The "law" of the system. Divided into **Commandments** (absolute), **Edicts** (authoritative), and **Counsel** (guidance). |
 
+### 🔄 Agentic Workflow
+
+```mermaid
+graph TD
+    User([User Prompt]) --> Maestro{Maestro}
+    Maestro -- 1. Research --> Contextualizer[Contextualizer]
+    Contextualizer -- Structural Brief --> Maestro
+    Maestro -- 2. Design Plan --> Architect[Architect]
+    Architect -- Plan Draft --> Reviewer{Reviewer}
+    Reviewer -- FAIL: Revision --> Architect
+    Reviewer -- PASS --> Maestro
+    Maestro -- 3. Implementation --> Coder[Coder]
+    Coder -- Java Code --> Reviewer
+    Maestro -- 4. Infrastructure --> DevOps[DevOps]
+    DevOps -- Docker/CI-CD --> Reviewer
+    Reviewer -- 5. Security Gate --> Maestro
+    Maestro -- 6. Handoff --> User
+```
+
 ---
 
 ## 👥 Meet Your AI Engineering Team
