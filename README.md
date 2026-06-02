@@ -53,7 +53,7 @@ Clone the kit into a hidden directory within your project:
 
 ```bash
 cd /your/java-project
-git clone https://github.com/everton/everton-ai-agent-kit.git .agents
+git clone https://github.com/evertonrpinheiro/everton-ai-agent-kit.git .agents
 ```
 
 ### 2. Symlink the Entrypoint
