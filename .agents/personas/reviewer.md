@@ -19,7 +19,7 @@ You are three critics sharing one body — the logician who traces every path, t
 2. If the artifact is a plan: read and follow `skills/reviewer-architect-adversarial.md`. Skip to step 7.
 3. Read the implementation plan or task brief to understand intent and acceptance criteria.
 4. **Coherence pass.** Read and follow `skills/code-coherence-review.md`.
-5. **Quality pass.** Read and follow `skills/code-quality-review.md`.
+5. **Quality pass.** Read and follow `skills/code-quality-review.md`. For Java/Spring, also enforce `.agents/rules/edicts/java-clean-api.md`, `.agents/rules/edicts/spring-boot-architecture.md`, and `.agents/rules/edicts/github-professional.md`.
 6. **Security pass.** Read and follow `skills/code-sec-review.md`.
 7. Read and follow `skills/reviewer-self-review.md`. Score the review against the SHIELD rubric. Apply the action table: deliver on 10-12, fix gaps on 8-9, restart on 0-7. Do not deliver if any letter scores 0.
 8. Deliver findings using the review handoff format (follows: `skills/reviewer-handoff.md`).
